@@ -1,0 +1,67 @@
+<!-- Modified HTML code with changed IDs and classes -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Modified Final Project test</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="img-container">
+            <!-- Placeholder for image -->
+        </div>
+
+        <div class="main-section">
+
+            <section class="upper-section">
+                <!-- Button to add new todo -->
+                <button class="add-todo-button">Add Task</button>   
+                <h3>Tasks to Do</h3>
+            </section>
+
+            <!-- Container for task list -->
+            <section class="task-list-section">
+               
+            </section>
+
+        </div>
+
+        <!-- Popup for adding new todo -->
+        <div class="popup-todo close-popup">
+            <!-- Close button for popup -->
+            <button class="close-button">Close</button>
+            <div class="todo-name">
+                <!-- Input field for todo name -->
+                <p class="input-field-names">Task Name</p>
+                <input type="text" id="task-name" required>
+            </div>
+
+            <div class="description">
+                <!-- Input field for todo description -->
+                <p class="input-field-names">Description</p>
+                <textarea id="task-description" cols="20" rows="4" required></textarea>
+            </div>
+
+            <div class="task-priority">
+                <!-- Dropdown for todo priority -->
+                <p class="input-field-names">Priority</p>
+                <select id="task-priority">
+                    <option value="high">High</option>
+                    <option value="medium">Medium</option>
+                    <option value="low">Low</option>
+                </select>
+            </div>
+
+            <!-- Button to save new todo -->
+            <div class="save-button">
+                <button id="save-button">Save</button>
+            </div>
+        </div>
+    </div>
+    <!-- Script for sweetalert2 library -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Script for custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

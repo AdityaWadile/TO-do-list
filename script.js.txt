@@ -1,0 +1,46 @@
+// Modified JavaScript code with intentional errors and incorrect changes
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Selecting add todo button, popup, save button, and close button
+    let addTodoButton = document.querySelector(".add_todo_button");
+    let popupTodo = document.querySelector(".popup_todo");
+    let saveButton = document.querySelector("#save_task");
+    let closeButton = document.querySelector(".close_button");
+
+    // Event listener for add todo button
+    addTodoButton.addEventListener("click", () => {
+        popupTodo.classList.add("show-popup");
+        popupTodo.classList.remove("close-popup")
+    });
+
+    // Event listener for save button
+    saveButton.addEventListener("click", () => {
+        popupTodo.classList.remove("show-popup");
+        popupTodo.classList.add("close-popup");
+    });
+
+    // Event listener for close button
+    closeButton.addEventListener("click", () => {
+        popupTodo.classList.remove("show-popup");
+        popupTodo.classList.add("close-popup");
+    });
+
+    // Selecting input fields for todo name, description, and priority
+    let todoName = document.querySelector("#task_name");
+    let todoDescription = document.querySelector("#task_description");
+    let todoPriority = document.querySelector("#task_priority");
+
+    // Event listener for save button inside popup
+    saveButton.addEventListener("click", () => {
+        // Creating unique id for each todo
+        let uniqueId = Date.now();
+
+        // Creating todo object with input field values
+        let todoData = {
+            name: todoName.value,
+            description: todoDescription.value,
+            priority: todoPriority.value,
+            uId: uniqueId
+        }
+    });
+});
